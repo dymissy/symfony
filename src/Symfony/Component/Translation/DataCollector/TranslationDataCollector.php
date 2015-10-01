@@ -42,7 +42,7 @@ class TranslationDataCollector extends DataCollector implements LateDataCollecto
     {
         $messages = $this->sanitizeCollectedMessages($this->translator->getCollectedMessages());
 
-        $this->data = $this->computeCount($messages);
+        $this->data += $this->computeCount($messages);
         $this->data['messages'] = $messages;
     }
 

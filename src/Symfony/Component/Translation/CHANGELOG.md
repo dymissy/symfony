@@ -22,6 +22,8 @@ CHANGELOG
    will be removed in Symfony 3.0, since its operation has nothing to do with 'diff',
    so the class name is misleading. The `TargetOperation` class should be used for
    this use-case instead.
+ * added ability to extend TranslationDataCollector class in order to add custom fields to
+   TranslationDataCollector::$data property
 
 2.7.0
 -----
